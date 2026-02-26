@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Engineering 3D Printing | Prototyping & Notes</title>
-  <meta name="description" content="Engineering-focused 3D printing services. Rapid prototyping, functional parts, and open technical notes." />
+  <title>FormX | Engineering 3D Printing</title>
+  <meta name="description" content="FormX — Engineering-focused 3D printing services. Rapid prototyping, functional parts, and open technical notes." />
   <style>
     :root{
       --bg:#0b0f14;
@@ -139,8 +139,8 @@
   <div class="wrap">
     <div class="nav">
       <div class="brand">
-        <div class="logo">3D</div>
-        <div>Engineering Print Notes</div>
+        <div class="logo">FX</div>
+        <div>FormX</div>
       </div>
       <div class="navlinks">
         <a href="#services">Services</a>
@@ -151,7 +151,7 @@
     </div>
 
     <div class="hero">
-      <div class="tag"><span class="dot"></span><span>Personal engineer · Small-batch production · Open documentation</span></div>
+      <div class="tag"><span class="dot"></span><span>Justin Yang · Small-batch production · Open documentation</span></div>
       <h1>Engineering-focused 3D printing<br/>for functional parts.</h1>
       <p class="sub">
         I help engineers and builders turn ideas into testable hardware.
@@ -205,7 +205,20 @@
         <h2>Fast links</h2>
         <p>Replace the placeholders with your real links.</p>
         <ul class="list">
-          <li class="li"><span class="badge mono">@</span><div><div class="k">Email</div><div class="small"><a href="mailto:your@email.com">your@email.com</a></div></div></li>
+          <li class="li">
+            <span class="badge mono">@</span>
+            <div>
+              <div class="k">Email</div>
+              <div class="small"><a href="mailto:yangzix000@gmail.com">yangzix000@gmail.com</a></div>
+            </div>
+          </li>
+          <li class="li">
+            <span class="badge mono">☎</span>
+            <div>
+              <div class="k">Phone</div>
+              <div class="small"><a href="tel:+19208405302">+1 (920) 840-5302</a></div>
+            </div>
+          </li>
           <li class="li"><span class="badge mono">in</span><div><div class="k">LinkedIn</div><div class="small"><a href="#" target="_blank" rel="noreferrer">Add your LinkedIn URL</a></div></div></li>
           <li class="li"><span class="badge mono">GH</span><div><div class="k">GitHub</div><div class="small"><a href="#" target="_blank" rel="noreferrer">Add your GitHub URL</a></div></div></li>
           <li class="li"><span class="badge mono">CV</span><div><div class="k">Resume / Capability</div><div class="small"><a href="#" target="_blank" rel="noreferrer">Upload a PDF and link here</a></div></div></li>
@@ -274,7 +287,7 @@
     <div class="section" id="quote">
       <div class="sectionhead">
         <h2>Request a quote</h2>
-        <a class="small" href="mailto:your@email.com">Prefer email? →</a>
+        <a class="small" href="mailto:yangzix000@gmail.com">Prefer email? →</a>
       </div>
       <div class="card" style="margin-top:12px">
         <p class="small">
@@ -293,7 +306,7 @@
     </div>
 
     <div class="footer">
-      <div>© <span id="year"></span> Engineering Print Notes</div>
+      <div>© <span id="year"></span> FormX · Justin Yang · <a href="tel:+19208405302">+1 (920) 840-5302</a></div>
       <div class="mono">Built as a static site · Fast · Simple · No tracking</div>
     </div>
   </div>
@@ -302,10 +315,10 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Simple "mailto quote" template
-    const email = "your@email.com"; // <-- change this
+    const email = "yangzix000@gmail.com";
     const subject = "3D Printing Quote Request";
     const body =
-`Hi,
+`Hi Justin,
 
 I’d like a quote for a 3D printing job.
 
@@ -320,7 +333,7 @@ I’d like a quote for a 3D printing job.
 Thanks!
 `;
 
-    const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = \`mailto:\${email}?subject=\${encodeURIComponent(subject)}&body=\${encodeURIComponent(body)}\`;
     document.getElementById('quoteBtn').setAttribute('href', mailto);
   </script>
 </body>
